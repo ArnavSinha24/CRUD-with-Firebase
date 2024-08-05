@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUD with Firebase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h2>CRUD with Firebase</h2>
+    <hr />
+    <br />
+    <div class="form">
+      RollNo: <input type="text" name="RollNo" id="roll" /> <br /><br />
+      Name:&nbsp; <input type="text" name="name" id="name" /> <br /><br />
+      <label for="gender">Gender:&nbsp;</label>
+      <select name="gender" id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="trans">Transgender</option>
+      </select>
+      <!-- Gender: <input type="text" name="gender" id="gender" /> <br /><br /> -->
+      Address: <input type="text" name="Address" id="address" /> <br /><br />
+    </div>
+
+    <div class="wrapper">
+      <button class="btn" id="insert">Insert</button>
+      <button class="btn" id="read">Read</button>
+      <button class="btn" id="update">Update</button>
+      <button class="btn" id="delete">Delete</button>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+  <script src="./fireConfig.js"></script>
+
+  <script src="./myscript.js"></script>
+</body>
+
+</html>
